@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    background-color: dimgray;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0.03em;
+}
+.toggle-menu img{
+    max-width: 100%;
+}
+
+.container img{
+    max-width: 100%;
+    max-height: 400px;
+    min-height: 400px;
+    min-width: 270px;
+    border-radius: 5px;
+}
+.toggle-menu{
+    position: absolute;
+    top: 0.5rem;
+    right: 1.5rem;
+    cursor: pointer;
+    filter: invert(1);
+    width: 40px;
+    z-index: 1;
+    padding: 10px;
+}
+.logo{
+    font-family: 'Raleway';
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: start;
+    padding: 0 10px;
+    height: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(5,5,66,1) 35%, rgba(5,77,92,1) 100%);
+}
+
+.main-nav{
+    height: 70px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+@media (min-width: 768px) {
+    .toggle-menu{
+        display: none;
+    } 
+    .main-nav{
+        height: 118px;
+        
+    }
+}
+
+.main-menu{
+    list-style: none;
+    margin-top: -5px;
+    margin-bottom: 0;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #383535;
+    transition: transform 0.3s;
+    transform: translateY(-130%);
+    position: relative;
+    z-index: 1;
+    background: rgb(64,76,136);
+    background: radial-gradient(circle, rgba(64,76,136,1) 0%, rgba(23,13,75,1) 100%);
+}
+
+.main-menu--show{
+    transform: translateY(0);
+}
+
+@media (min-width: 768px) {
+    .main-menu{
+        flex-direction: row;
+        transform: translateY(0);
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+}
+    
+
+.main-menu__item{
+    padding: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+
+.main-menu__link{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.main-menu__item:hover{
+    background-color: rgba(178, 175, 209, 0.89);
+    transition: 0.5s;
+    color: black;
+}
+
+.container{
+    display: flex;
+    font-family: sans-serif;
+    color: white;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+h2{text-align: center;font-size: 2.5em;color: white;padding: 10px;margin: 0;}
+h3{font-size: 1.4em;text-align: center;font-weight: 600;margin-top: 20px;font-family: 'Raleway';}
+
+ 
+.comedia{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(img/cine_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+}
+
+.suspenso{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),  url(img/suspenso.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.drama{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(img/drama.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.terror{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(img/terror.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.sci-fi{
+    background-image:linear-gradient(0deg, rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)), url(img/sci-fi.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container .carta{
+    width: 270px;
+    height: 480px;
+    cursor: pointer;
+    margin: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s;
+}
+
+.container .carta:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+
+}
+
+
+section{
+    transform: translateY(73px);}
+    
+
+footer{
+    background-color: black;
+}
+
+footer p{
+    margin: 0;
+    color: rgb(100, 100, 100);
+    padding: 12px;
+}
+footer a{
+    padding: 12px;
+}
+footer .container{
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+@media (min-width:768px) {
+    section{
+        transform: translateY(118px);
+    }
+    footer .container{
+        height: 170px;
+    }
+}
